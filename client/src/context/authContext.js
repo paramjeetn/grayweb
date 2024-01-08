@@ -9,7 +9,7 @@ export const AuthContextProvider = ({ children }) => {
   );
 
   const login = async (inputs) => {
-    const res = await axios.post("https://grayweb-backend.vercel.app/Server/auth/login", inputs, {
+    const res = await axios.post("http://localhost:8000/Server/auth/login", inputs, {
       withCredentials: true,
     });
    

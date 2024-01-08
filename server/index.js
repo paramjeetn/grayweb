@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use(cors(
     {
-        origin: "https://grayweb.vercel.app/",
+        origin: "http://localhost:3000",
         credentials: true
       }
 ));
