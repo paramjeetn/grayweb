@@ -42,6 +42,9 @@ app.post("/Server/upload",upload.single("file"),(req,res)=>{
   const file=req.file;
   res.status(200).json(file.filename);
 })
+app.get("/",(req,res)=>{
+  res.send("Hello world");
+})
 app.use("/Server/auth", authRoutes);
 app.use("/Server/users", userRoutes); 
 app.use("/Server/posts", postRoutes);
