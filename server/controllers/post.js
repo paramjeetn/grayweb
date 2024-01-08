@@ -51,7 +51,7 @@ export const getPosts = async(req,res)=>{
             const userId= req.query.userId;
             
 
-           if(userId==="undefined"){
+           if(userId=="undefined"){
                
                post = await Post.find().sort({createdAt: -1 });
                

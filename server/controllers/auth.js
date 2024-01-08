@@ -54,7 +54,7 @@ export const login = async (req, res) => {
     
     console.log(token);
     res.cookie("acessToken",token,{
-      httpOnly:true,
+      
     })
     .status(200)
     .json(user);
