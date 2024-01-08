@@ -1,5 +1,5 @@
 import axios from "axios"
 export const makeRequest = axios.create({
-    baseURL:"http://localhost:8000/Server",
+    baseURL:"https://grayweb-backend.vercel.app/Server",
     withCredentials:true,
 })

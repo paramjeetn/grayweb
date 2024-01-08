@@ -75,7 +75,7 @@ deleteMutation.mutate(post._id)
             </div>
           </div>
           <MoreHorizIcon onClick={()=>setMenuOpen(!menuOpen)} />
-          {menuOpen && <button onClick={handleDelete}>delete</button>}
+          {menuOpen && post.userId == currentUser._id && (  <button onClick={handleDelete}>delete</button>)}
         </div>
         <div className="content">
           <p>{post.desc}</p>
