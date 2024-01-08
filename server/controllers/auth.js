@@ -52,7 +52,7 @@ export const login = async (req, res) => {
     const token = jwt.sign({ id: user._id }, "somesuperhardtoguessstring");
     delete user.password;
     
-    
+    console.log(token);
     res.cookie("acessToken",token,{
       httpOnly:true,
     })
